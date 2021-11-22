@@ -33,6 +33,7 @@ export default {
       const todo = {
         task,
         done: false,
+        id: Date.now(),
       };
       await createOnServer(todo);
     },
